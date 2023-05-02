@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Tilt+Prism&display=swap');
+@import url('https://use.typekit.net/qxq5usw.css');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap');
+
+/*RESET */
+
+* { 
+    margin: 0;
+    padding: 0;
+/* SOMETHING NEW */
+    box-sizing: border-box;
+/* combines padding and border values into the width value so that an elemant with a width of, say, 100px remains at that width even with padding and border */
+}
+
+h1, h2, h3, h4, h6, p, a, li { 
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-bottom: 40px;
+}
+
+
+/* HEADER AND FOOTER */
+
+
+img { 
+    width: 100%;
+    display: block;
+}
+
+header, footer { 
+    max-width: 1200;
+    border-bottom: 1px solid #222;
+    margin: 0px auto;
+    padding: 6px 10px 6px 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 { 
+    font-size: 4em;
+    margin-top: 0px;
+    font-family: 'Lobster Two', cursive;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+nav { 
+    width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-top: 4px;
+}
+
+nav li { 
+    display: inline-block;
+    margin-left: 40px;
+}
+
+footer { 
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #222;
+}
+
+footer img { 
+    margin-left: 20px;
+    height: 2em;
+}
+
+.credit { 
+    text-align: center;
+    font-size: 0.75em;
+    color: #ccc;
+}
+
+.credit a { 
+    font-size: 1em;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.citation, .citation a { 
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+}
+
+
+
+/* MAIN CONTENT */
+
+main { 
+    margin: 16px auto;
+}
+
+main img { 
+    width: 100%;
+    display: block;
+}
+
+.container { 
+    max-width: 1440px;
+    margin: 0px auto 0px auto;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+.card { 
+    background-color: #eee;
+    width: 360px;
+    text-align: center;
+    margin: 10px 10px;
+    padding: 32px;
+    display: inline-block;
+}
+
+.card h2 { 
+    font-size: 1.75em;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.card p { 
+    font-size: 1.25em;
+}
+
+.card img { 
+    width: 100%;
+}
+
+.card-details { 
+    background-color: #eee;
+    max-width: 824px;
+    margin: 20px auto;
+    padding: 40px;
+    display: flex;
+}
+
+.card-details-text { 
+    width: 50%;
+}
+
+.card-details-text h2 { 
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card-details-text p { 
+    font-size: 1.25em;
+    margin-bottom: 16px;
+}
+
+.card-details-image { 
+    width: 50%;
+    margin-right: 40px;
+}
+
+
+
+
+/* FORM ON CONTACT PAGE */
+
+form { 
+    width: 400px;
+    margin: 20px auto;
+}
+
+input, textarea { 
+    font-size: 1.25em;
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    padding: 6px;
+}
+
+.form-button { 
+    text-align: center;
+    background-color: #222;
+    width: 300px;
+    margin: 0px auto;
+    padding: 6px;
+}
+
+.form-button a { 
+    color: #fff;
+    font-size: 1.25em;
+}
+
+/* this class is applied to the text above the form */
+
+.newsletter { 
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+
+.about {
+    text-align: center;
+    margin-top: 16px;
+    border-bottom: 3px solid rgb(100, 130, 100);
+}
+
+.about-h2 {
+    font-size: 38px;
+}
+
+.about-p {
+    font-family: sans-serif;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+
+
+
+/* THANKS PAGE */
+
+/* background image with centered text */
+
+.thanks-image { 
+    background-image: url("Images/victoria-tronina-eNXZvDGqGbM-unsplash.jpg");
+    background-color: #cccccc;
+    /* background color appears if image is unavilable */
+    height: 524px;
+    max-width: 1160px;
+    margin: 16px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* cover resizes the image to cover the entire container, contain resizes the image only so that it is entirely visable, length is width and height of image, percentage of parent element is also used, like 100% or 80% or 150% */
+    position: relative;
+    /* this allows for the text div position to be absolute */
+} 
+
+.thanks-text p { 
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    /* this positions text in the center of the image div */
+    color: black;
+    font-size: 4em;
+    text-shadow: 0px 0px 18px #999999;
+    /* this adds a drop shadow to the text */
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+/* this one changes the header for each page and adjusts the contact page text */
+
+@media only screen and (max-width: 818px) { 
+    .card-details { 
+        max-width: 600px;
+        flex-direction: column;
+    }
+    .card-details-text { 
+        width: 100%;
+    }
+    .card-details-image { 
+        width: 100%;
+        margin-right: 40px;
+    }
+}
